@@ -1,0 +1,23 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    background: $cor-primaria;
+    
+}
+
+.cabecalho__container {
+    height: 100%;
+    display: flex;
+}
+
+.cabecalho__container_primario {
+    width: 400px;
+    background: $cor-secundaria;        
+}
+
+.cabecalho__container_secundario {
+    width: 400px;
+    background: $cor-terciaria;        
+}
