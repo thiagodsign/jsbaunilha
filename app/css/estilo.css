@@ -1,6 +1,20 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonte/Montserrat-Regular.ttf") format("truetype"), url("../fonte/Montserrat-Bold.ttf") format("truetype"); }
+  src: url("../fonte/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonte/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.fonte-negrito {
+  font-weight: 700; }
+
+.fonte-regular {
+  font-weight: 300; }
 
 * {
   font-family: 'Montserrat', 'Helvetica', sans-serif;
@@ -66,7 +80,8 @@ pre {
    * Remove the gray background on active links in IE 10.
    */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  text-decoration: none; }
 
 /**
    * 1. Remove the bottom border in Chrome 57-
@@ -318,13 +333,19 @@ template {
   display: flex;
   align-items: center;
   color: #ffc400; }
+  .cabecalho__nome-site a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffc400; }
 
 .menu-de-paginas {
   width: 100vw;
+  height: calc(100vh - 128px);
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 80px 0;
   padding: 16px 0;
   overflow-y: auto; }
 
@@ -335,7 +356,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: wrap; }
+  flex-flow: wrap;
+  margin-top: 80px; }
   .menu-de-paginas__lista li {
     list-style-type: none; }
 
@@ -363,3 +385,23 @@ template {
     height: 48px;
     width: 48px;
     margin-bottom: 32px; }
+  @media (max-width: 800px) {
+    .menu-de-paginas__item {
+      width: calc(100vw - 118px); } }
+
+.conteudo {
+  width: 100%;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  position: relative; }
+
+.conteudo__container {
+  background-color: #fff;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  padding: 32px 40px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 54px rgba(0, 0, 0, 0.2); }

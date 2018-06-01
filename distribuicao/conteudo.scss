@@ -1,0 +1,18 @@
+.conteudo {
+    width: 100%;
+    height: calc(100vh - 96px);
+    overflow-y: auto;
+    position: relative;
+}
+
+.conteudo__container {
+    background-color: $cor-branca;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
+    right: 24px;
+    padding: 32px 40px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 54px rgba($cor-preta, .2);
+}
