@@ -1,0 +1,58 @@
+.bateria-virtual {
+    display: flex;
+    widows: 100%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+.bateria-virtual__peca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    margin: 24px;
+    transition: all .07s ease;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    color: $cor-branca;
+    background: $cor-primaria;
+    box-shadow: 0 0 0 rgba($cor-terciaria, .6);
+    
+    .bateria-virtual__circulo {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        border: 2px solid $cor-terciaria;
+        border-radius: 50%;
+        transition: all .5s ease;
+        opacity: .3;
+    }
+}
+
+.bateria-virtual__peca_tocada {
+    transform: scale(1.1);
+    box-shadow: 0 0 48px $cor-terciaria;
+    .bateria-virtual__circulo {
+        opacity: 1;
+    }
+}
+
+kbd {
+    display: block;
+    font-size: 48px;
+}
+
+.bateria-virtual__nome-da-peca {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $cor-terciaria;
+}
