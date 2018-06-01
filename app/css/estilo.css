@@ -402,6 +402,7 @@ template {
   left: 24px;
   right: 24px;
   min-height: calc(100vh - 208px);
+  margin-bottom: 24px;
   padding: 32px 40px;
   border-radius: 8px;
   box-shadow: 2px 4px 54px rgba(0, 0, 0, 0.2); }
@@ -413,8 +414,6 @@ template {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100%;
-  max-height: 800px;
   margin: 0 auto; }
 
 .bateria-virtual__peca {
