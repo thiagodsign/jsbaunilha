@@ -400,9 +400,8 @@ template {
   position: absolute;
   top: 24px;
   left: 24px;
-  bottom: 24px;
   right: 24px;
-  min-height: 500px;
+  min-height: calc(100vh - 208px);
   padding: 32px 40px;
   border-radius: 8px;
   box-shadow: 2px 4px 54px rgba(0, 0, 0, 0.2); }
