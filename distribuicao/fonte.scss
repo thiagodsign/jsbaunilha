@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonte/Montserrat-Regular.ttf') format('truetype'),
+         url('../fonte/Montserrat-Bold.ttf') format('truetype')
+}
+
+@mixin fonte-padrao() {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+$fonte-negrito: 700;
+$fonte-regular: 300;
+
+* {
+    @include fonte-padrao();
+    font-weight: $fonte-regular;
+}

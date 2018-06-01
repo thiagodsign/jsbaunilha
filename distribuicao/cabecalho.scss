@@ -1,23 +1,14 @@
 .cabecalho {
-    display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 56px;
+    height: 64px;
+    padding: 16px;
+    padding-left: 32px;
     background: $cor-primaria;
-    
 }
 
-.cabecalho__container {
+.cabecalho__nome-site {
     height: 100%;
     display: flex;
-}
-
-.cabecalho__container_primario {
-    width: 400px;
-    background: $cor-secundaria;        
-}
-
-.cabecalho__container_secundario {
-    width: 400px;
-    background: $cor-terciaria;        
+    align-items: center;
+    color: $cor-terciaria;
 }
