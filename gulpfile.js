@@ -14,7 +14,7 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./distribuicao/estilo.scss')
+    return gulp.src('./sass/estilo.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./app/css'));
 });

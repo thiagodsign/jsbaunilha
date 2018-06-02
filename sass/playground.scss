@@ -1,0 +1,32 @@
+:root {
+    --cor: #ffc600;
+    --margem: 10px;
+    --desfoque: 2px;
+    --borda: 10px;
+    --sombra: 10px;
+}
+
+.playground {
+    text-align: left;
+    color: black;
+}
+
+.playground__imagem {
+    border-radius: var(--borda);
+    border: var(--margem) solid var(--cor) ;
+    filter: blur(var(--desfoque));
+    width: 100%;
+    box-shadow: 0 0 var(--sombra) $cor-cinza-50;
+}
+
+.playground__controles {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}

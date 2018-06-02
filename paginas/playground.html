@@ -1,0 +1,34 @@
+<div class="playground">
+    <h2>Altere as variáveis do css com JS</h2>
+
+    <div class="playground__controles">
+        <label for="margem">Margem:</label>
+        <input id="margem" type="range" name="margem" min="0" max="100" value="10" data-sizing="px">
+
+        <label for="desfoque">Desfoque:</label>
+        <input id="desfoque" type="range" name="desfoque" min="0" max="10" value="2" data-sizing="px">
+
+        <label for="borda">Borda arredondada:</label>
+        <input id="borda" type="range" name="borda" min="0" max="200" value="10" data-sizing="px">
+
+        <label for="sombra">Sombra:</label>
+        <input id="sombra" type="range" name="sombra" min="0" max="50" value="10" data-sizing="px">
+
+        <label for="cor">Cor</label>
+        <input id="cor" type="color" name="cor" value="#ffc600">
+    </div>
+
+    <img class="playground__imagem" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+</div>
+
+<script>
+    const inputs = document.querySelectorAll('.playground__controles input');
+
+    function handleUpdate() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+</script>
