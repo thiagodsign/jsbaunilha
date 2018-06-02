@@ -356,8 +356,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: wrap;
-  margin-top: 80px; }
+  flex-flow: wrap; }
   .menu-de-paginas__lista li {
     list-style-type: none; }
 
@@ -396,6 +395,9 @@ template {
   position: relative; }
 
 .conteudo__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   background-color: #fff;
   position: absolute;
   top: 24px;

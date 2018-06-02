@@ -6,6 +6,9 @@
 }
 
 .conteudo__container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-color: $cor-branca;
     position: absolute;
     top: 24px;
