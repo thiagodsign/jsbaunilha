@@ -8,6 +8,6 @@ function incluirConteudo(nomeDaPagina) {
   $.get('/jsbaunilha/paginas/' + nomeDaPagina)
   // $.get('/paginas/' + nomeDaPagina)
       .then(function (conteudo) {
-          $('#doc-conteudo-principal').empty().append(conteudo);
+          $('#conteudo-principal').empty().append(conteudo);
       });
 }
