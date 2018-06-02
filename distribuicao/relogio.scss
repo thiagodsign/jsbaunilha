@@ -1,0 +1,57 @@
+.relogio {
+    width: 280px;
+    height: 280px;
+    background-image: url(../relogio/relogio.svg) !important;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 16px;
+    box-shadow: 4px 4px 36px rgba($cor-preta, .3);
+}
+
+.relogio__corpo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.relogio__ponteiro {
+    width: 120px;
+    margin-left: 20px;
+    height: 5px;
+    border-radius: 8px; 
+    background: $cor-primaria;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: cubic-bezier(0, 2.85, 0.65, -0.05) all .1s;
+
+    &_segundos {
+        height: 3px;
+        background: $cor-terciaria;
+    }
+    
+    &_minutos {
+        width: 90px;
+        margin-left: 50px;
+    }
+    
+    &_horas {
+        width: 70px;
+        margin-left: 70px;
+    }
+}
+
+.relogio__circulo-centro {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 132px;
+    left: 132px;
+    background: $cor-terciaria;
+    z-index: 2;
+    border-radius: 50%;
+    // box-shadow: 0 0 8px rgba($cor-preta, .4);    
+}

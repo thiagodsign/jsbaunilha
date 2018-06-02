@@ -1,0 +1,34 @@
+<div class="relogio">
+    <div class="relogio__corpo">
+        <div class="relogio__circulo-centro"></div>
+        <div class="relogio__ponteiro relogio__ponteiro_horas"></div>
+        <div class="relogio__ponteiro relogio__ponteiro_minutos"></div>
+        <div class="relogio__ponteiro relogio__ponteiro_segundos"></div>
+    </div>
+</div>
+
+<script>
+    const ponteiroSegundos = document.querySelector('.relogio__ponteiro_segundos')
+    const ponteiroMinutos = document.querySelector('.relogio__ponteiro_minutos')
+    const ponteiroHoras = document.querySelector('.relogio__ponteiro_horas')
+
+
+    function setDate() {
+        const now = new Date();
+
+        const segundos = now.getSeconds();
+        const segundosCadencia = ((segundos / 60) * 360) + 90;
+        ponteiroSegundos.style.transform = `rotate(${segundosCadencia}deg)`;
+
+        const minutos = now.getMinutes();
+        const minutosCadencia = ((minutos / 60) * 360) + 90;
+        ponteiroMinutos.style.transform = `rotate(${minutosCadencia}deg)`
+
+        const horas = now.getHours();
+        const horasCadencia = ((horas / 12) * 360) + 90;
+        ponteiroHoras.style.transform = `rotate(${horasCadencia}deg)`
+    }
+
+    setInterval(setDate, 1000);
+</script>
+<script src="../app/js/documentacao.js"></script>

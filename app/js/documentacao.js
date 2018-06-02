@@ -73,13 +73,3 @@ $('#primeiraAbaDoFormulario').click(() => {
     $('#segundaAbaDoFormulario').removeClass("doc-abas__aba-selecionada");
     $('#primeiraAbaDoFormulario').addClass("doc-abas__aba-selecionada");
 });
- 
-// barra-navegacao
-
-gerenciarOPaddingBottomDaPagina();
-gerenciarOPaddingBottomAoMudarOTamanhoDoViewport();
-
-
-// Menu lateral
-gerenciarOEstadoDoMenuLateral();
-gerenciarOEstadoDoMenuLateralAoMudarOTamanhoDoViewport();
