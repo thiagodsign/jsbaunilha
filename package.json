@@ -1,0 +1,25 @@
+{
+  "name": "jsbaunilha",
+  "version": "1.0.0",
+  "description": "Estudo de JavaScript",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodsign/jsbaunilha.git"
+  },
+  "author": "ThiagoDsign",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagodsign/jsbaunilha/issues"
+  },
+  "homepage": "https://github.com/thiagodsign/jsbaunilha#readme"
+}
